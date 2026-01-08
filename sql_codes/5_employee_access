@@ -1,0 +1,23 @@
+/** Do employees with access to Employee Assistance Programs show lower absenteeism rate? 
+
+SELECT
+    employee_id,
+    access_to_eaps,
+    mental_health_absences
+FROM healthcare_data
+WHERE
+    access_to_eaps = 'Yes' 
+LIMIT 10;
+**/
+
+
+SELECT
+    access_to_eaps,
+    AVG(mental_health_absences) AS avg_absences
+FROM 
+    healthcare_data
+GROUP BY
+    access_to_eaps;
+
+
+

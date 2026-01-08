@@ -1,0 +1,3 @@
+COPY healthcare_data
+FROM 'C:\portfolio projects\csv_file\healthcare_data.csv'
+DELIMITER ',' CSV HEADER;

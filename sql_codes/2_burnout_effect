@@ -1,0 +1,20 @@
+/**
+How does burnout frequency affect job satisfaction and turnover intentions?
+
+SELECT *
+FROM healthcare_data
+LIMIT 10
+**/
+
+
+
+SELECT 
+    burnout_frequency,
+    SUM(CASE WHEN turnover_intention = 'Yes' THEN 1 ELSE 0 END) AS turnover_yes_count,
+    COUNT(*) AS low_satisfaction
+FROM 
+    healthcare_data
+WHERE
+    job_satisfaction <= 3
+GROUP BY
+    burnout_frequency;

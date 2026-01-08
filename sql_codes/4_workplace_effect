@@ -1,0 +1,16 @@
+/** average of mental_health_absence = 7 **/
+
+/** WORKPLACE FACTOR THAT CONTRIBUTES MOST TO MENTAL HEALTH ABSENCES**/
+
+SELECT
+    COUNT(mental_health_absences) mha_counts,
+    workplace_factor
+FROM
+    healthcare_data
+WHERE
+    mental_health_absences >= 7
+GROUP BY
+    workplace_factor
+ORDER BY
+    mha_counts DESC;
+

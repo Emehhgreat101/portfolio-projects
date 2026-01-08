@@ -1,0 +1,12 @@
+CREATE TABLE healthcare_data (
+    employee_ID VARCHAR(20) PRIMARY KEY,
+    employee_type VARCHAR(255) NOT NULL,
+    department VARCHAR(255) NOT NULL,
+    workplace_factor VARCHAR(255) NOT NULL,
+    stress_level INT NOT NULL CHECK (stress_level BETWEEN 1 AND 10),
+    burnout_frequency VARCHAR(50) NOT NULL CHECK (burnout_frequency IN ('Never','Occasionally','Often')),
+    job_satisfaction INT NOT NULL CHECK (job_satisfaction BETWEEN 1 AND 5),
+    access_to_EAPs VARCHAR(3) NOT NULL CHECK (access_to_EAPs IN ('Yes','No')),
+    mental_health_absences INT NOT NULL,
+    turnover_intention VARCHAR(3) NOT NULL CHECK (turnover_intention IN ('Yes','No'))
+);

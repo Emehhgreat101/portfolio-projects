@@ -1,0 +1,24 @@
+/** 
+1.	Which job roles and department experience the highest stress and burnout rates?
+
+- Average stress level = 7
+
+**/
+
+SELECT 
+    COUNT(employee_id) AS employee_count,
+    employee_type,
+    department
+FROM
+    healthcare_data
+WHERE
+    stress_level >= 7 AND
+    (
+    burnout_frequency = 'Often' OR
+    burnout_frequency = 'Occasionally'
+    )
+GROUP BY
+    employee_type,
+    department
+ORDER BY
+    employee_count DESC;

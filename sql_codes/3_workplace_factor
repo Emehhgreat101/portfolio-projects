@@ -1,0 +1,93 @@
+/** COUNT OF WORKPLACE FACTOR**/
+SELECT
+    COUNT(workplace_factor) AS wpf_count,
+    workplace_factor
+FROM
+    healthcare_data
+GROUP BY
+    workplace_factor
+ORDER BY
+    wo_co DESC;
+
+
+
+
+/** DEPARTMENTS WITH HEAVY WORKLOAD FACTOR**/
+SELECT
+    COUNT(*) AS workload_count,
+    department,
+    workplace_factor
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Heavy Workload'
+GROUP BY
+    department,
+    workplace_factor
+ORDER BY
+    d_count DESC;
+
+
+/** DEPARTMENTS WITH WORK-LIFE IMBALANCE FACTOR**/
+SELECT
+    COUNT(*) AS worklife_count,
+    department,
+    workplace_factor
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Work-Life Imbalance'
+GROUP BY
+    department,
+    workplace_factor
+ORDER BY 
+    dep_count DESC;
+
+
+/** DEPARTMENTS WITH POOR WORK ENVIRONMENT FACTOR**/
+SELECT
+    COUNT(*) AS work_envi_count,
+    department,
+    workplace_factor
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Poor Work Environment'
+GROUP BY
+    department,
+    workplace_factor
+ORDER BY
+    d_count DESC;
+
+
+/** DEPARTMENTS WITH CAREER STAGNATION FACTOR**/
+SELECT
+    COUNT(*) AS career_count,
+    department,
+    workplace_factor
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Career Stagnation'
+GROUP BY
+    department,
+    workplace_factor
+ORDER BY
+    d_count DESC;
+
+
+/** DEPARTMENTS WITH SAFETY CONCERN FACTOR**/
+SELECT
+    COUNT(*) AS safety_count,
+    department,
+    workplace_factor
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Safety Concerns'
+GROUP BY
+    department,
+    workplace_factor
+ORDER BY
+    d_count DESC;
+
