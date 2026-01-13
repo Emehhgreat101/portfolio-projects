@@ -300,6 +300,5 @@ Burnout frequency has a great impact on job satisfaction as well as turnover int
 - Carrer Stagnation: Employees face career stagnation, unable to progress in their jobs over a long period, mostly in the administration department, as well as radiology and general medicine.
 
 #### 5. Employees with access to employee assistance programs absenteeism rate:
-Employees who have access to assisted programs show lower mental health absence, with an average of 6.81, compared to employees without access to these assisted programs
-
+Employees who have access to assisted programs show lower mental health absence, with an average of 6.81, compared to employees without access to these assisted programs.
 
