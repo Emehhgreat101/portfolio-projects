@@ -14,3 +14,43 @@ GROUP BY
 ORDER BY
     mha_counts DESC;
 
+/** DEPARTMENTS WITH HEAVY WORKLOAD FACTOR**/
+SELECT
+    COUNT(*) AS workload_count,
+    department
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Heavy Workload'
+GROUP BY
+    department
+ORDER BY
+    workload_count DESC;
+
+
+/** DEPARTMENTS WITH POOR WORK ENVIRONMENT FACTOR**/
+SELECT
+    COUNT(*) AS work_envi_count,
+    department
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Poor Work Environment'
+GROUP BY
+    department
+ORDER BY
+    work_envi_count DESC;
+
+
+/** DEPARTMENTS WITH CAREER STAGNATION FACTOR**/
+SELECT
+    COUNT(*) AS career_count,
+    department
+FROM 
+    healthcare_data
+WHERE
+    workplace_factor = 'Career Stagnation'
+GROUP BY
+    department
+ORDER BY
+    career_count DESC;
