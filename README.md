@@ -285,6 +285,8 @@ Comparing the avaerage of both employees with access to assistance programs to e
 
 ![Report overview](graphic_photo/overview_dashboard.png)
 
+*Dashboard of Healthcare Workforce Mental Health*
+
 #### 1. Department with the highest stress and burnout rate:
  The department with the highest stress rate is General Medicine, as employees in this department record higher burnout levels. This is influenced by several workplace factors, which are discussed below.
 
