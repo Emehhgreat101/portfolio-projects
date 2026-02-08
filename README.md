@@ -147,6 +147,7 @@ ORDER BY
 
 
 ![Top Workplace Factor](graphic_photo\Workplace_factor.png)
+
 *Bar representation of the top factors affecting employees behavour and work perfomance at work in the healthcare sector*
 
 ***
